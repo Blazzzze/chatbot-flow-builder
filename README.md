@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Chatbot Flow Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, extensible chatbot flow builder built with React and React Flow.  
+Drag & drop message nodes, connect them with arrowed edges, edit node text, delete nodes/edges, and save/load flows to your browser’s local storage.
 
-## Available Scripts
+**Live Demo:** [Vercel Link](https://chatbot-flow-builder-sigma-lac.vercel.app/)
 
-In the project directory, you can run:
+**Source Code:** [Github Link](https://github.com/Blazzzze/chatbot-flow-builder)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Text Node**  
+  Drag & drop “Message” nodes onto the canvas.
 
-### `npm test`
+- **Edges & Arrowheads**  
+  Connect nodes with edges, each displaying a closed arrowhead at the target.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Settings Panel**  
+  Click any node to open a side panel and edit its message text.
 
-### `npm run build`
+- **Delete**  
+  Select one or more nodes or edges and remove them with the Delete button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Save & Load Flows**  
+  Save named snapshots of your flow into localStorage and reload them later from the Node Panel.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Extensible Architecture**  
+  Easily register new node types in `nodeTypes` and expand the Nodes Panel.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **React** (with TypeScript)  
+- **React Flow** for graph rendering  
+- **Vercel** for zero-config deployment  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Getting Started
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+- [Node.js](https://nodejs.org/) v14 or later  
+- npm (comes with Node.js)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/Blazzzze/chatbot-flow-builder.git
+cd chatbot-flow-builder
+npm install
