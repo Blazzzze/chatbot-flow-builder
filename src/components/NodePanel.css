@@ -1,0 +1,24 @@
+.node-panel {
+  padding: 10px;
+  border-right: 1px solid #eee;
+}
+.node-item {
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px dashed #888;
+  border-radius: 4px;
+  cursor: grab;
+}
+.saved-flow-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.flow-name {
+  font-weight: bold;
+}
+.empty {
+  color: #888;
+  font-style: italic;
+}
